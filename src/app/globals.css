@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 130 33% 92%; /* #E5F0E7 */
+    --foreground: 145 30% 22%; /* #264A32 */
+    --card: 130 33% 95%; /* #F0F7F1 */
+    --card-foreground: 145 30% 22%; /* #264A32 */
+    --popover: 130 33% 95%; /* #F0F7F1 */
+    --popover-foreground: 145 30% 22%; /* #264A32 */
+    --primary: 140 28% 34%; /* #3F704D */
+    --primary-foreground: 130 33% 92%; /* #E5F0E7 */
+    --secondary: 140 20% 82%; /* #C4D9CA */
+    --secondary-foreground: 140 28% 34%; /* #3F704D */
+    --muted: 140 20% 82%; /* #C4D9CA */
+    --muted-foreground: 145 13% 48%; /* #6B8A7A */
+    --accent: 45 65% 52%; /* #D4AF37 */
+    --accent-foreground: 45 65% 15%; /* #3F330F */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 135 20% 80%; /* #BFD7C6 */
+    --input: 135 20% 80%; /* #BFD7C6 */
+    --ring: 45 65% 52%; /* #D4AF37 */
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors */
+    --sidebar-background: 140 28% 34%; /* #3F704D */
+    --sidebar-foreground: 130 33% 92%; /* #E5F0E7 */
+    --sidebar-primary: 45 65% 52%; /* #D4AF37 */
+    --sidebar-primary-foreground: 45 65% 15%; /* #3F330F */
+    --sidebar-accent: 140 23% 44%; /* #588A65 */
+    --sidebar-accent-foreground: 130 33% 92%; /* #E5F0E7 */
+    --sidebar-border: 140 28% 26%; /* #2F543A */
+    --sidebar-ring: 45 65% 52%; /* #D4AF37 */
+
+    --chart-1: 140 28% 34%; /* primary */
+    --chart-2: 45 65% 52%; /* accent */
+    --chart-3: 140 20% 60%; /* lighter primary */
+    --chart-4: 45 50% 70%; /* lighter accent */
+    --chart-5: 145 13% 48%; /* muted-foreground */
+  }
+
+  .dark {
+    /* Define dark theme colors if needed, for now keep them as default shadcn dark */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 140 28% 64%; /* Lighter green for dark mode */
+    --primary-foreground: 140 28% 14%; /* Darker green text */
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 45 65% 62%; /* Lighter gold for dark mode */
+    --accent-foreground: 45 65% 10%; /* Darker gold text */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 45 65% 62%; /* Lighter gold for dark mode */
+
+    /* Sidebar specific colors for dark theme */
+    --sidebar-background: 240 5.9% 10%; /* Dark grey */
+    --sidebar-foreground: 130 33% 85%; /* Lighter green text */
+    --sidebar-primary: 45 65% 62%; /* Lighter gold */
+    --sidebar-primary-foreground: 45 65% 10%; /* Darker gold text */
+    --sidebar-accent: 240 3.7% 20%; /* Slightly lighter grey for accent */
+    --sidebar-accent-foreground: 130 33% 85%; /* Lighter green text */
+    --sidebar-border: 240 3.7% 12%; /* Darker border */
+    --sidebar-ring: 45 65% 62%; /* Lighter gold */
+
+    --chart-1: 140 28% 64%;
+    --chart-2: 45 65% 62%;
+    --chart-3: 140 20% 50%;
+    --chart-4: 45 50% 60%;
+    --chart-5: 240 5% 64.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: var(--font-geist-sans);
+  }
+}
