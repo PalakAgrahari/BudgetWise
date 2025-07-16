@@ -1,8 +1,8 @@
 # BudgetWise: Your Smart Budget Planner and AI Personal Finance Tracker 💰
 
-![BudgetWise](https://img.shields.io/badge/WealthWise-AI%20Finance%20Tracker-brightgreen)
+![BudgetWise](https://img.shields.io/badge/BudgetWise-AI%20Finance%20Tracker-brightgreen)
 
-Welcome to **BudgetWise**, an innovative application designed to help you manage your personal finances with ease. This app leverages the power of AI to track your income and expenses, categorize transactions, set budgets, and forecast spending. Built with cutting-edge technologies like **Next.js**, **React**, and **Firebase**, WealthWise empowers you to take control of your financial future.
+Welcome to **BudgetWise**, an innovative application designed to help you manage your personal finances with ease. This app leverages the power of AI to track your income and expenses, categorize transactions, set budgets, and forecast spending. Built with cutting-edge technologies like **Next.js**, **React**, and **Firebase**, BudgetWise empowers you to take control of your financial future.
 
 ## Table of Contents
 
@@ -34,7 +34,7 @@ BudgetWise is built using a combination of powerful technologies:
 
 ## Installation
 
-To get started with WealthWise, follow these steps:
+To get started with BudgetWise, follow these steps:
 
 1. **Clone the Repository**:
 
@@ -63,7 +63,7 @@ To get started with WealthWise, follow these steps:
 
 ## Usage
 
-Once you have WealthWise running, you can start tracking your finances. Here’s how to use the main features:
+Once you have BudgetWise running, you can start tracking your finances. Here’s how to use the main features:
 
 ### Tracking Income and Expenses
 
@@ -94,4 +94,4 @@ Once you have WealthWise running, you can start tracking your finances. Here’s
 - Access the "Forecast" section to view predictions based on your past spending habits.
 - Use this information to adjust your budgets and spending behavior.
 
-Thank you for checking out WealthWise! We hope this app helps you achieve your financial goals. Happy budgeting!
+Thank you for checking out BudgetWise! We hope this app helps you achieve your financial goals. Happy budgeting!

@@ -49,7 +49,7 @@ export function LoginForm() {
     <Card className="w-full max-w-md mx-auto shadow-xl">
       <CardHeader>
         <CardTitle className="text-2xl">Login</CardTitle>
-        <CardDescription>Access your WealthWise account.</CardDescription>
+        <CardDescription>Access your BudgetWise account.</CardDescription>
       </CardHeader>
       <CardContent>
         {authError && (
