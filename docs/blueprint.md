@@ -1,4 +1,4 @@
-# **App Name**: WealthWise
+# **App Name**: BudgetWise
 
 ## Core Features:
 

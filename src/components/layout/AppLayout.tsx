@@ -1,8 +1,7 @@
+"use client";
 
-'use client';
-
-import type { ReactNode } from 'react';
-import React from 'react';
+import type { ReactNode } from "react";
+import React from "react";
 import {
   SidebarProvider,
   Sidebar,
@@ -11,14 +10,14 @@ import {
   SidebarFooter,
   SidebarInset,
   SidebarTrigger,
-} from '@/components/ui/sidebar';
-import { SidebarNav } from './SidebarNav';
-import { Leaf } from 'lucide-react';
-import Link from 'next/link';
-import { useAuth } from '@/contexts/AuthContext';
-import { ThemeToggle } from './ThemeToggle';
-import Loading from '@/app/loading';
-import { usePathname } from 'next/navigation'; // Import usePathname
+} from "@/components/ui/sidebar";
+import { SidebarNav } from "./SidebarNav";
+import { Leaf } from "lucide-react";
+import Link from "next/link";
+import { useAuth } from "@/contexts/AuthContext";
+import { ThemeToggle } from "./ThemeToggle";
+import Loading from "@/app/loading";
+import { usePathname } from "next/navigation"; // Import usePathname
 
 interface AppLayoutProps {
   children: ReactNode;
@@ -27,13 +26,16 @@ interface AppLayoutProps {
 export function AppLayout({ children }: AppLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = React.useState(true);
   const { currentUser, loading: authLoading } = useAuth();
-  
+
   const pathname = usePathname(); // Use usePathname for consistent path
-  const isAuthPage = pathname === '/login' || pathname === '/signup' || pathname === '/forgot-password';
+  const isAuthPage =
+    pathname === "/login" ||
+    pathname === "/signup" ||
+    pathname === "/forgot-password";
 
   // Show full page loader if auth is loading and user is not on an auth page or the public homepage
-  if (authLoading && !isAuthPage && pathname !== '/') {
-     return <Loading />;
+  if (authLoading && !isAuthPage && pathname !== "/") {
+    return <Loading />;
   }
 
   if (currentUser) {
@@ -42,9 +44,14 @@ export function AppLayout({ children }: AppLayoutProps) {
       <SidebarProvider open={sidebarOpen} onOpenChange={setSidebarOpen}>
         <Sidebar variant="sidebar" collapsible="icon">
           <SidebarHeader className="p-4">
-            <Link href="/" className="flex items-center gap-2 text-lg font-semibold text-sidebar-foreground hover:text-sidebar-primary transition-colors">
+            <Link
+              href="/"
+              className="flex items-center gap-2 text-lg font-semibold text-sidebar-foreground hover:text-sidebar-primary transition-colors"
+            >
               <Leaf className="h-7 w-7 text-sidebar-primary" />
-              <span className="group-data-[collapsible=icon]:hidden">WealthWise</span>
+              <span className="group-data-[collapsible=icon]:hidden">
+                BudgetWise
+              </span>
             </Link>
           </SidebarHeader>
           <SidebarContent>
@@ -56,7 +63,8 @@ export function AppLayout({ children }: AppLayoutProps) {
         </Sidebar>
         <SidebarInset>
           <header className="sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background/80 backdrop-blur-sm px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6 py-4">
-            <SidebarTrigger className="md:hidden" /> {/* For mobile sidebar toggle */}
+            <SidebarTrigger className="md:hidden" />{" "}
+            {/* For mobile sidebar toggle */}
             {/* Could add breadcrumbs or page title here */}
           </header>
           <main className="flex-1 p-4 sm:p-6">{children}</main>
